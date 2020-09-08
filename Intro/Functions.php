@@ -86,3 +86,7 @@ foreach ($fruitKeys as $key) {
     echo "<br>";
 }
 
+// Exercise 6
+
+
+
