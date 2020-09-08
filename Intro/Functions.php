@@ -58,5 +58,31 @@ foreach ($persons as $person) {
     echo "<br>";
 }
 
+
 // Exercise 5
 echo "<br>";
+$fruits = [
+    'apples' => ['weight' => 13],
+    'pears' => ['weight' => 8],
+    'oranges' => ['weight' => 5],
+    'watermelons' => ['weight' => 25],
+    'bananas' => ['weight' => 11]
+];
+
+function isOver10KG($fruitWeight) {
+    return $fruitWeight > 10;
+}
+
+$prices = [
+    'Over 10KG' => 2,
+    'Less than 10KG' => 1
+];
+
+$fruitKeys = array_keys($fruits);
+foreach ($fruitKeys as $key) {
+    echo isOver10KG($fruits[$key]['weight']) ?
+        "{$key} will cost {$prices['Over 10KG']} euros to ship" :
+        "{$key} will cost {$prices['Less than 10KG']} euro to ship";
+    echo "<br>";
+}
+
