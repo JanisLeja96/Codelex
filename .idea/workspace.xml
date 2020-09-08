@@ -22,7 +22,20 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4eac4405-5c3b-403c-a77a-77a2ae7b827d" name="Default Changelist" comment="Initial commit" />
+    <list default="true" id="4eac4405-5c3b-403c-a77a-77a2ae7b827d" name="Default Changelist" comment="Updated">
+      <change afterPath="$PROJECT_DIR$/Intro/Files/Exercise1/Exercise.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Intro/Files/Exercise1/while.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Intro/Files/Exercise2/Exercise.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Intro/Files/Exercise2/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Intro/Files/Exercise3/2ndfile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Intro/Files/Exercise3/Main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Intro/Files/Exercise3/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Intro/Files/Exercise4/Exercise.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Intro/Files/Exercise4/person.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Intro/Files/Exercise5/Exercise.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Intro/Files/Exercise5/persons.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +45,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="JanisLeja96 &lt;janis.leja1996@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
@@ -51,6 +69,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Intro/Files/Exercise2" />
+      <recent name="$PROJECT_DIR$/Intro/Files/Exercise1" />
       <recent name="$PROJECT_DIR$/Intro" />
     </key>
   </component>
@@ -64,7 +84,8 @@
       <updated>1599493275909</updated>
       <workItem from="1599493276956" duration="8421000" />
       <workItem from="1599547114522" duration="2403000" />
-      <workItem from="1599549542221" duration="1088000" />
+      <workItem from="1599549542221" duration="4945000" />
+      <workItem from="1599560605911" duration="6523000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1599547252908</created>
@@ -87,7 +108,28 @@
       <option name="project" value="LOCAL" />
       <updated>1599550429227</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated">
+      <created>1599550797636</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599550797636</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated">
+      <created>1599551728491</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1599551728491</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Initial commit">
+      <created>1599562944617</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1599562944617</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,9 +160,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="641" y="177" width="700" height="759" key="#PHP" timestamp="1599494422007">
@@ -135,21 +177,25 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="579" y="290" width="824" height="533" key="IDE.errors.dialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599549508146" />
-    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1599499843899">
+    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1599565695181">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599499843899" />
+    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599565695181" />
     <state x="485" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1599550629224">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1599550629224" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599550442258">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599562946974">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1599550442258" />
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1599498032299">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1599562946974" />
+    <state x="579" y="211" width="824" height="691" key="editAsTableFormatDialogDimension" timestamp="1599565684818">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1599498032299" />
+    <state x="579" y="211" width="824" height="691" key="editAsTableFormatDialogDimension/72.27.1848.1053@72.27.1848.1053" timestamp="1599565684818" />
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1599565364495">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1599565364495" />
   </component>
 </project>
