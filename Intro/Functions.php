@@ -87,6 +87,18 @@ foreach ($fruitKeys as $key) {
 }
 
 // Exercise 6
+echo "<br>";
+$elements = [1, 2, 3, 4.5, 'five'];
 
+function double($number) {
+    return $number * 2;
+}
+
+for ($i = 0; $i < count($elements); $i++) {
+    if (gettype($elements[$i]) != 'string') {
+        echo double($elements[$i]);
+        echo "<br>";
+    }
+}
 
 
