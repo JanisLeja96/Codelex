@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -23,12 +26,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4eac4405-5c3b-403c-a77a-77a2ae7b827d" name="Default Changelist" comment="Updated">
-      <change afterPath="$PROJECT_DIR$/Basics/Classes/Exercise3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/Classes/Exercise4.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/Classes/Point.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Flow Of Control/Exercise1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Flow Of Control/Exercise2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Flow Of Control/Exercise3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Flow Of Control/Exercise4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Flow Of Control/Exercise5.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics/Classes/Exercise1.php" beforeDir="false" afterPath="$PROJECT_DIR$/Basics/Classes/Exercise1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/Arithmetic/CheckOddEven.php" beforeDir="false" afterPath="$PROJECT_DIR$/Basics/Arithmetic/CheckOddEven.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/Arithmetic/Exercise1.php" beforeDir="false" afterPath="$PROJECT_DIR$/Basics/Arithmetic/Exercise1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/Arithmetic/Exercise9.php" beforeDir="false" afterPath="$PROJECT_DIR$/Basics/Arithmetic/Exercise9.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intro/RPS.php" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/RPS.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +88,7 @@
       <workItem from="1599549542221" duration="4945000" />
       <workItem from="1599560605911" duration="6958000" />
       <workItem from="1599642668131" duration="16595000" />
-      <workItem from="1599663853339" duration="6117000" />
+      <workItem from="1599663853339" duration="10300000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1599547252908</created>
@@ -167,7 +174,21 @@
       <option name="project" value="LOCAL" />
       <updated>1599665864931</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Initial commit">
+      <created>1599670716655</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1599670716655</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Initial commit">
+      <created>1599674152586</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1599674152586</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,25 +236,29 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="579" y="290" width="824" height="533" key="IDE.errors.dialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599549508146" />
-    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1599669294627">
+    <state x="662" y="273" width="657" height="568" key="NewPhpClassDialog" timestamp="1599670758631">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599669294627" />
+    <state x="662" y="273" width="657" height="568" key="NewPhpClassDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599670758631" />
+    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1599672804261">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599672804261" />
     <state x="485" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1599550629224">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1599550629224" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599665867896">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599674155068">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1599665867896" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1599674155068" />
     <state x="579" y="211" width="824" height="691" key="editAsTableFormatDialogDimension" timestamp="1599565684818">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="579" y="211" width="824" height="691" key="editAsTableFormatDialogDimension/72.27.1848.1053@72.27.1848.1053" timestamp="1599565684818" />
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1599666373713">
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1599673193346">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1599666373713" />
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1599673193346" />
   </component>
 </project>

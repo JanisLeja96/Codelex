@@ -3,5 +3,5 @@
 function checkOddEven(int $number) {
     echo $number % 2 == 0 ? 'Even number' : 'Odd number';
 }
-checkOddEven($argv[1]);
+checkOddEven(readline('Enter a number:'));
 echo "\nbye!";

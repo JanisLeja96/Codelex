@@ -9,4 +9,4 @@ function fifteen(int $first, int $second) {
     return false;
 }
 
-echo fifteen($argv[1], $argv[2]);
+echo fifteen(readline('Enter first number: '), readline('Enter second number: '));
