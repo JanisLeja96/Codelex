@@ -23,15 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4eac4405-5c3b-403c-a77a-77a2ae7b827d" name="Default Changelist" comment="Updated">
-      <change afterPath="$PROJECT_DIR$/Basics/Arithmetic/CheckOddEven.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/Arithmetic/Coza-loza-woza.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/Arithmetic/Exercise1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/Arithmetic/Exercise3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/Arithmetic/Exercise4.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/Arithmetic/Exercise5.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/Arithmetic/Exercise7.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/Arithmetic/Exercise8.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Arithmetic/Exercise10.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Arrays/Exercise1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Arrays/Exercise2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/Arithmetic/Exercise9.php" beforeDir="false" afterPath="$PROJECT_DIR$/Basics/Arithmetic/Exercise9.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +79,7 @@
       <workItem from="1599547114522" duration="2403000" />
       <workItem from="1599549542221" duration="4945000" />
       <workItem from="1599560605911" duration="6958000" />
-      <workItem from="1599642668131" duration="4253000" />
+      <workItem from="1599642668131" duration="6516000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1599547252908</created>
@@ -134,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599567143177</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Initial commit">
+      <created>1599646968807</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1599646968808</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,18 +185,18 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="579" y="290" width="824" height="533" key="IDE.errors.dialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599549508146" />
-    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1599645403308">
+    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1599649105824">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599645403308" />
+    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599649105824" />
     <state x="485" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1599550629224">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1599550629224" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599567144955">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599646973806">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1599567144955" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1599646973806" />
     <state x="579" y="211" width="824" height="691" key="editAsTableFormatDialogDimension" timestamp="1599565684818">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
