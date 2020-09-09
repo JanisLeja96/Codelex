@@ -13,4 +13,4 @@ function calculateBMI($weight, $height) {
     }
 }
 
-calculateBMI($argv[1], $argv[2]);
+calculateBMI(readline('Enter your weight:'), readline('Enter your height: '));
