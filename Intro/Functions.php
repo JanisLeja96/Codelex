@@ -8,7 +8,7 @@ echo addCodelex('Janis');
 
 // Exercise 2
 echo "<br>";
-function multiply($base, $multiplier) {
+function multiply(int $base, int $multiplier) {
     return $base * $multiplier;
 }
 echo multiply(2, 6);

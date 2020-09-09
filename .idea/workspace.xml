@@ -23,9 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4eac4405-5c3b-403c-a77a-77a2ae7b827d" name="Default Changelist" comment="Updated">
-      <change afterPath="$PROJECT_DIR$/Basics/Arrays/Hangman.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/Classes/Exercise1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Classes/Exercise3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Classes/Exercise4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Classes/Point.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/Classes/Exercise1.php" beforeDir="false" afterPath="$PROJECT_DIR$/Basics/Classes/Exercise1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Intro/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/Functions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +81,7 @@
       <workItem from="1599549542221" duration="4945000" />
       <workItem from="1599560605911" duration="6958000" />
       <workItem from="1599642668131" duration="16595000" />
-      <workItem from="1599663853339" duration="1877000" />
+      <workItem from="1599663853339" duration="6117000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1599547252908</created>
@@ -158,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599661318592</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Initial commit">
+      <created>1599665864931</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1599665864931</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,25 +215,25 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="579" y="290" width="824" height="533" key="IDE.errors.dialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599549508146" />
-    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1599665350153">
+    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1599669294627">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599665350153" />
+    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599669294627" />
     <state x="485" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1599550629224">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1599550629224" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599661320885">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599665867896">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1599661320885" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1599665867896" />
     <state x="579" y="211" width="824" height="691" key="editAsTableFormatDialogDimension" timestamp="1599565684818">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="579" y="211" width="824" height="691" key="editAsTableFormatDialogDimension/72.27.1848.1053@72.27.1848.1053" timestamp="1599565684818" />
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1599665103577">
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1599666373713">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1599665103577" />
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1599666373713" />
   </component>
 </project>
