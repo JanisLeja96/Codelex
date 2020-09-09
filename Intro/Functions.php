@@ -42,6 +42,7 @@ class Person {
     }
 }
 $person = new Person('John', 'Doe', 19);
+$person2 = new Person('Jane', 'Doe', 13);
 
 echo $person->isAtLeast18();
 
