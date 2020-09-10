@@ -1,34 +1,6 @@
 <?php
 
 $string = readline('Enter string: ');
-/*$buttons = [
-    2 => ['A','B','C'],
-    3 => ['D','E','F'],
-    4 => ['G','H','I'],
-    5 => ['J','K','L'],
-    6 => ['M','N','O'],
-    7 => ['P','Q','R','S'],
-    8 => ['T','U','V'],
-    9 => ['W','X','Y','Z']
-];
-
-function keypad(string $string) {
-    global $buttons;
-
-    $numberKeys = [];
-    $stringAsArr = str_split($string);
-
-    foreach ($stringAsArr as $letter) {
-        foreach ($buttons as $key => $value) {
-            if (array_keys($value, $letter)) {
-                array_push($numberKeys, $key);
-            }
-        }
-    }
-
-    return implode('', $numberKeys);
-}
-echo keypad($string);*/
 
 $strAsArray = str_split(strtoupper($string));
 
