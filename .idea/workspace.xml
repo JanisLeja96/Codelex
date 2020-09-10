@@ -26,16 +26,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4eac4405-5c3b-403c-a77a-77a2ae7b827d" name="Default Changelist" comment="Updated">
-      <change afterPath="$PROJECT_DIR$/Basics/Flow Of Control/Exercise1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/Flow Of Control/Exercise2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/Flow Of Control/Exercise3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/Flow Of Control/Exercise4.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basics/Flow Of Control/Exercise5.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Flow Of Control/PhoneKeyPad.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Loops/Exercise1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Loops/Exercise2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Loops/Exercise3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Loops/Exercise4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Loops/Exercise5.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics/Arithmetic/CheckOddEven.php" beforeDir="false" afterPath="$PROJECT_DIR$/Basics/Arithmetic/CheckOddEven.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics/Arithmetic/Exercise1.php" beforeDir="false" afterPath="$PROJECT_DIR$/Basics/Arithmetic/Exercise1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basics/Arithmetic/Exercise9.php" beforeDir="false" afterPath="$PROJECT_DIR$/Basics/Arithmetic/Exercise9.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intro/RPS.php" beforeDir="false" afterPath="$PROJECT_DIR$/Intro/RPS.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/Flow Of Control/Exercise5.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +86,8 @@
       <workItem from="1599549542221" duration="4945000" />
       <workItem from="1599560605911" duration="6958000" />
       <workItem from="1599642668131" duration="16595000" />
-      <workItem from="1599663853339" duration="10300000" />
+      <workItem from="1599663853339" duration="11624000" />
+      <workItem from="1599730957736" duration="8460000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1599547252908</created>
@@ -188,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599674152586</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Updated">
+      <created>1599674170733</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1599674170733</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,18 +246,18 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="662" y="273" width="657" height="568" key="NewPhpClassDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599670758631" />
-    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1599672804261">
+    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1599738755940">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599672804261" />
+    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599738755940" />
     <state x="485" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1599550629224">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1599550629224" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599674155068">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599674173249">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1599674155068" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1599674173249" />
     <state x="579" y="211" width="824" height="691" key="editAsTableFormatDialogDimension" timestamp="1599565684818">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
