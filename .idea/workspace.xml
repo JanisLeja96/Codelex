@@ -92,7 +92,7 @@
       <workItem from="1599730957736" duration="13380000" />
       <workItem from="1599749810897" duration="11887000" />
       <workItem from="1599763291686" duration="709000" />
-      <workItem from="1599774565537" duration="7213000" />
+      <workItem from="1599774565537" duration="7971000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1599547252908</created>
@@ -220,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599759649934</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Updated and fixed">
+      <created>1599782534681</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1599782534681</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +261,8 @@
     <MESSAGE value="Updated" />
     <MESSAGE value="Deleted previous method" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Updated and fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated and fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="641" y="177" width="700" height="759" key="#PHP" timestamp="1599494422007">
@@ -285,10 +293,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1599550629224" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599759651732">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599782537437">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1599759651732" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1599782537437" />
     <state x="579" y="211" width="824" height="691" key="editAsTableFormatDialogDimension" timestamp="1599565684818">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
