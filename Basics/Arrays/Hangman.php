@@ -1,6 +1,7 @@
 <?php
 
 function getStatus($hiddenWord, $misses) {
+    $attempts = 6 - count($misses);
     echo "\nWord: ";
     foreach ($hiddenWord as $letter) {
         echo "{$letter} ";
@@ -9,6 +10,7 @@ function getStatus($hiddenWord, $misses) {
     foreach ($misses as $missed) {
         echo "{$missed} ";
     }
+    echo "\nYou have {$attempts} attempts left";
     echo "\n";
 }
 
@@ -21,6 +23,7 @@ game :
     $hiddenWord = [];
     $guesses = [];
     $misses = [];
+    $attempts = 6;
 
     for ($i = 0; $i < count($splitWord); $i++) {
         $hiddenWord[$i] = "_";
@@ -35,9 +38,15 @@ game :
         $splitWord[$guessedIndex] = '';
     } else {
         $misses[] = $guess;
+        $attempts--;
     }
 
     if (!in_array('_', $hiddenWord)) {
+        $isGameOver = true;
+    }
+
+    if ($attempts == 0) {
+        $hiddenWord = $splitWord;
         $isGameOver = true;
     }
 
