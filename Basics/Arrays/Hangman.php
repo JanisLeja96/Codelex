@@ -1,19 +1,6 @@
 <?php
-//TODO
-$words = ['codelex', 'bug', 'github', 'javascript'];
-$wordToGuess = 'javascript';//$words[random_int(0, 2)];
 
-$splitWord = str_split($wordToGuess);
-$hiddenWord = [];
-$guesses = [];
-$misses = [];
-
-for ($i = 0; $i < count($splitWord); $i++) {
-    $hiddenWord[$i] = "_";
-}
-
-$isGameOver = false;
-while ($isGameOver == false) {
+function getStatus($hiddenWord, $misses) {
     echo "\nWord: ";
     foreach ($hiddenWord as $letter) {
         echo "{$letter} ";
@@ -23,11 +10,29 @@ while ($isGameOver == false) {
         echo "{$missed} ";
     }
     echo "\n";
+}
+
+$isGameOver = false;
+game :
+    $words = ['codelex', 'bug', 'github', 'javascript'];
+    $wordToGuess = $words[random_int(0, 3)];
+
+    $splitWord = str_split($wordToGuess);
+    $hiddenWord = [];
+    $guesses = [];
+    $misses = [];
+
+    for ($i = 0; $i < count($splitWord); $i++) {
+        $hiddenWord[$i] = "_";
+    }
+    while ($isGameOver == false) {
+    getStatus($hiddenWord, $misses);
     $guess = readline("Guess: ");
 
     if (in_array($guess, $splitWord)) {
         $guessedIndex = array_search($guess, $splitWord);
         $hiddenWord[$guessedIndex] = $splitWord[$guessedIndex];
+        $splitWord[$guessedIndex] = '';
     } else {
         $misses[] = $guess;
     }
@@ -37,9 +42,11 @@ while ($isGameOver == false) {
     }
 
     if ($isGameOver) {
+        getStatus($hiddenWord, $misses);
         $choice = readline("Play 'again' or 'quit'? ");
         if ($choice == 'again') {
-
+            $isGameOver = false;
+            goto game;
         }
     }
 

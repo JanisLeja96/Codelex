@@ -26,11 +26,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4eac4405-5c3b-403c-a77a-77a2ae7b827d" name="Default Changelist" comment="Updated">
-      <change afterPath="$PROJECT_DIR$/Basics/Loops/Exercise6.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tasks/CPUGuessTheNumber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tasks/EggFight.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tasks/GuessTheNumber.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Loops/Exercise7.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basics/Loops/NumberSquare.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tasks/VirtualCar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/Arithmetic/Exercise10.php" beforeDir="false" afterPath="$PROJECT_DIR$/Basics/Arithmetic/Exercise10.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/Arithmetic/Exercise3.php" beforeDir="false" afterPath="$PROJECT_DIR$/Basics/Arithmetic/Exercise3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/Arrays/Hangman.php" beforeDir="false" afterPath="$PROJECT_DIR$/Basics/Arrays/Hangman.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/Loops/Exercise4.php" beforeDir="false" afterPath="$PROJECT_DIR$/Basics/Loops/Exercise4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/Loops/Exercise5.php" beforeDir="false" afterPath="$PROJECT_DIR$/Basics/Loops/Exercise5.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basics/Loops/Exercise6.php" beforeDir="false" afterPath="$PROJECT_DIR$/Basics/Loops/Exercise6.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +90,9 @@
       <workItem from="1599642668131" duration="16595000" />
       <workItem from="1599663853339" duration="11624000" />
       <workItem from="1599730957736" duration="13380000" />
-      <workItem from="1599749810897" duration="8764000" />
+      <workItem from="1599749810897" duration="11887000" />
+      <workItem from="1599763291686" duration="709000" />
+      <workItem from="1599774565537" duration="7213000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1599547252908</created>
@@ -206,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599739472319</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Initial commit">
+      <created>1599759649933</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1599759649934</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,9 +252,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated" />
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="Deleted previous method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted previous method" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="641" y="177" width="700" height="759" key="#PHP" timestamp="1599494422007">
@@ -259,25 +273,29 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="662" y="273" width="657" height="568" key="NewPhpClassDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599670758631" />
-    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1599755116757">
+    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1599780976115">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599755116757" />
+    <state x="791" y="479" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599780976115" />
+    <state x="769" y="237" width="444" height="640" key="RollbackChangesDialog" timestamp="1599778293990">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="769" y="237" width="444" height="640" key="RollbackChangesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1599778293990" />
     <state x="485" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1599550629224">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="485" y="188" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1599550629224" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599739473324">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1599759651732">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1599739473324" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1599759651732" />
     <state x="579" y="211" width="824" height="691" key="editAsTableFormatDialogDimension" timestamp="1599565684818">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="579" y="211" width="824" height="691" key="editAsTableFormatDialogDimension/72.27.1848.1053@72.27.1848.1053" timestamp="1599565684818" />
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1599753142857">
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1599780992469">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1599753142857" />
+    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1599780992469" />
   </component>
 </project>

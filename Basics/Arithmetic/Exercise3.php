@@ -7,11 +7,10 @@ function sum($lowerBound, $upperBound) {
         $sum += $i;
     }
 
-    echo "The sum of {$lowerBound} and {$upperBound} is {$sum}\n";
-    echo "The average is {$avg}";
+    return "The sum of {$lowerBound} and {$upperBound} is {$sum}\nThe average is {$avg}";
 }
 
 $lowerBound = 1;
 $upperBound = 100;
 
-sum($lowerBound, $upperBound);
+echo sum($lowerBound, $upperBound);
