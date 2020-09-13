@@ -1,8 +1,8 @@
 Name,Price,Category,Description,"Expiry date",Amount
-Apple,0.4,Fruit,"Red apples",01.10.20,70
+Apple,0.4,Fruit,"Red apples",01.10.20,50
 "Water bottle",0.7,Drink,"Non-carbonated water",None,40
 Banana,1.2,Fruit,"Fresh bananas",02.10.20,40
-"Monster Energy",1.4,Drink,"Energy Drink",04.05.21,20
+"Monster Energy",1.4,Drink,"Energy Drink",04.05.21,15
 Carrot,0.2,Vegetable,"Fresh carrots",05.10.20,60
 Tomato,0.4,Vegetable,"Fresh tomatos",05.10.20,35
 Snickers,0.7,Snack,"Snickers bar",02.02.21,44

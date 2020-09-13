@@ -97,15 +97,19 @@ switch ($argv[1]) {
         $store->listProducts();
         break;
     case 'purchase' :
-        if ($store->findByName($argv[2])) {
-            try {
-                $store->sell($argv[2], $argv[3]);
-                echo "{$store->findByName($argv[2])->name}";
-            } catch (Exception $e) {
-                echo $e->getMessage();
+        if ($argv[3]) {
+            if ($store->findByName($argv[2])) {
+                try {
+                    $store->sell($argv[2], $argv[3]);
+                    echo "\n{$argv[3]} unit(-s) of {$store->findByName($argv[2])->name} successfully purchased";
+                } catch (Exception $e) {
+                    echo $e->getMessage();
+                }
+            } else {
+                echo "Product not found!";
             }
         } else {
-            echo "Product not found!";
+            echo "Amount not specified!";
         }
         break;
     case 'listInfo' :
