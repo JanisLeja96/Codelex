@@ -17,7 +17,7 @@ class Warehouse
                 if ($entry[0] == 'Name') {
                     continue;
                 }
-                $this->stock[] = new Product($entry[0], $entry[1], $entry[2], $entry[3], $entry[4], $entry[5]);
+                $this->stock[] = new Product(...$entry);
             }
         }
     }
@@ -59,8 +59,7 @@ switch ($argv[1]) {
         }
         echo "\n";
         foreach ($warehouse->getStock() as $product) {
-            printf($mask, $product->name, number_format($product->price, 2), $product->category,
-                $product->description, $product->expiryDate, $product->amount);
+            echo $product;
         }
         break;
     default :

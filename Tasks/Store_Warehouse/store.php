@@ -94,14 +94,13 @@ switch ($argv[1]) {
     case 'listAll' :
         printf($mask, ...$header);
         $borderLength = 0;
-        while ($borderLength <= $headerLength) {
+        while ($borderLength < $headerLength) {
             echo "-";
             $borderLength++;
         }
         echo "\n";
         foreach ($store->getStock() as $product) {
-            printf($mask, $product->name, number_format($product->price, 2), $product->category,
-                $product->description, $product->expiryDate, $product->amount);
+            echo $product;
         }
         break;
     case 'purchase' :
@@ -125,13 +124,12 @@ switch ($argv[1]) {
             printf($mask, ...$header);
             $product = $store->findByName($argv[2]);
             $borderLength = 0;
-            while ($borderLength <= $headerLength) {
+            while ($borderLength < $headerLength) {
                 echo "-";
                 $borderLength++;
             }
             echo "\n";
-            printf($mask, $product->name, number_format($product->price, 2), $product->category,
-                $product->description, $product->expiryDate, $product->amount);
+            echo $product;
         } else {
             echo "Product not found!";
         }
