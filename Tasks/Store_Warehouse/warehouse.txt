@@ -1,0 +1,6 @@
+Name|Price|Category|Description|"Expiry date"|Amount
+Duracell|2.4|Batteries|"Duracell batteries"|none|100
+Cido|1.8|Drink|"Cido apple juice"|21.10.20|80
+Orbit|0.6|Sweets|"Chewing gum"|none|100
+Milk|0.7|Dairy|"Fresh milk"|30.09.20|60
+Apple|0.4|Fruit|"Red apples"|01.10.20|40

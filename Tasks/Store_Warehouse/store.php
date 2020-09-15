@@ -8,34 +8,21 @@ class Store {
     private array $stock = [];
     private $databaseFile;
     private Buyer $buyer;
-    private string $mask = " |%-15s |%-6s |%-12s |%-30s |%-12s |%-6s |\n";
-    private array $fields = ['Name', 'Price', 'Category', 'Description', 'Expiry date', 'Amount'];
 
     public function __construct()
     {
-        $this->databaseFile = fopen('database.csv', 'r+');
+        $this->databaseFile = fopen('stock.csv', 'r+');
         while (!feof($this->databaseFile)) {
             $entry = fgetcsv($this->databaseFile);
             if (gettype($entry) == 'array') {
                 if ($entry[0] == 'Name') {
                     continue;
                 }
-                $this->stock[] = new Product($entry[0], $entry[1], $entry[2], $entry[3], $entry[4], $entry[5]);
+                $this->stock[] = new Product(...$entry);
             }
         }
         $this->buyer = new Buyer();
         fclose($this->databaseFile);
-    }
-
-    private function printTable()
-    {
-        $headerLength = printf($this->mask, ...$this->fields);
-        $borderLength = 0;
-        while ($borderLength <= $headerLength) {
-            echo "_";
-            $borderLength++;
-        }
-        echo "\n";
     }
 
     public function findByName(string $name)
@@ -58,43 +45,64 @@ class Store {
         } else {
             throw new Exception('Not enough units in stock!');
         }
+    }
 
+    public function import()
+    {
+        $warehouseFile = fopen('warehouse.txt', 'r');
+        while (!feof($warehouseFile)) {
+            $entry = fgetcsv($warehouseFile, 0, '|');
+            if (gettype($entry) == 'array') {
+                if ($entry[0] == 'Name') {
+                    continue;
+                }
+                if ($this->findByName($entry[0])) {
+                    $this->findByName($entry[0])->amount += (int) $entry[5];
+                } else {
+                    $this->stock[] = new Product(...$entry);
+                }
+
+            }
+        }
+        $this->saveChanges();
     }
 
     private function saveChanges()
     {
+        $fields = ['Name', 'Price', 'Category', 'Description', 'Expiry date', 'Amount'];
         $tempfile = fopen('tempfile.csv', 'w+');
-        fputcsv($tempfile, [...$this->fields]);
+        fputcsv($tempfile, [...$fields]);
         foreach ($this->stock as $product) {
             fputcsv($tempfile, [$product->name, $product->price, $product->category, $product->description,
                 $product->expiryDate, $product->amount]);
         }
-        rename('tempfile.csv', 'database.csv');
+        rename('tempfile.csv', 'stock.csv');
     }
 
-    public function listSingleProduct(string $name)
-    {
-        $this->printTable();
-        $product = $this->findByName($name);
-        printf($this->mask, $product->name, number_format($product->price, 2, '.', ','), $product->category, $product->description,
-            $product->expiryDate, $product->amount);
-
-    }
-
-    public function listProducts() {
-        $this->printTable();
-        foreach ($this->stock as $product) {
-            printf($this->mask, $product->name, number_format($product->price, 2, '.', ','), $product->category, $product->description,
-                   $product->expiryDate, $product->amount);
-        }
+    public function getStock() {
+        return $this->stock;
     }
 }
 
 $store = new Store();
+$mask = " |%-15s |%-6s |%-12s |%-30s |%-12s |%-6s |\n";
+$header = ['Name', 'Price', 'Category', 'Description', 'Expiry date', 'Amount'];
+$headerLength = strlen(sprintf($mask, ...$header));
+
 
 switch ($argv[1]) {
     case 'listAll' :
-        $store->listProducts();
+        printf($mask, ...$header);
+        $borderLength = 0;
+        while ($borderLength <= $headerLength) {
+            echo "-";
+            $borderLength++;
+        }
+        echo "\n";
+        foreach ($store->getStock() as $product) {
+            printf($mask, $product->name, number_format($product->price, 2), $product->category,
+                $product->description, $product->expiryDate, $product->amount);
+        }
         break;
     case 'purchase' :
         if ($argv[3]) {
@@ -114,14 +122,27 @@ switch ($argv[1]) {
         break;
     case 'listInfo' :
         if ($store->findByName($argv[2])) {
-            $store->listSingleProduct($argv[2]);
+            printf($mask, ...$header);
+            $product = $store->findByName($argv[2]);
+            $borderLength = 0;
+            while ($borderLength <= $headerLength) {
+                echo "-";
+                $borderLength++;
+            }
+            echo "\n";
+            printf($mask, $product->name, number_format($product->price, 2), $product->category,
+                $product->description, $product->expiryDate, $product->amount);
         } else {
             echo "Product not found!";
         }
+        break;
+    case 'import' :
+        $store->import();
         break;
     default:
         echo "Available commands:
         purchase [productName] [amount]
         listAll
-        listInfo [productName]\n";
+        listInfo [productName]
+        import\n";
 }
