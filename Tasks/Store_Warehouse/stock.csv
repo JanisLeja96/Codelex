@@ -1,5 +1,5 @@
 Name,Price,Category,Description,"Expiry date",Amount
-Apple,0.4,Fruit,"Red apples",01.10.20,130
+Apple,0.4,Fruit,"Red apples",01.10.20,160
 "Water bottle",0.7,Drink,"Non-carbonated water",None,40
 Banana,1.2,Fruit,"Fresh bananas",02.10.20,40
 "Monster Energy",1.4,Drink,"Energy Drink",04.05.21,15
@@ -7,7 +7,7 @@ Carrot,0.2,Vegetable,"Fresh carrots",05.10.20,60
 Tomato,0.4,Vegetable,"Fresh tomatos",05.10.20,35
 Snickers,0.7,Snack,"Snickers bar",02.02.21,44
 Cheetos,0.8,Snack,"Ketchup flavored cheetos",04.09.21,65
-Duracell,2.4,Batteries,"Duracell batteries",none,100
-Cido,1.8,Drink,"Cido apple juice",21.10.20,80
-Orbit,0.6,Sweets,"Chewing gum",none,100
-Milk,0.7,Dairy,"Fresh milk",30.09.20,60
+Duracell,2.4,Batteries,"Duracell batteries",none,300
+Cido,1.8,Drink,"Cido apple juice",21.10.20,240
+Orbit,0.6,Sweets,"Chewing gum",none,300
+Milk,0.7,Dairy,"Fresh milk",30.09.20,180

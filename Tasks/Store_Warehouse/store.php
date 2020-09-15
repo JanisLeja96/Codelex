@@ -136,6 +136,7 @@ switch ($argv[1]) {
         break;
     case 'import' :
         $store->import();
+        echo "Data from warehouse.txt imported successfully";
         break;
     default:
         echo "Available commands:
