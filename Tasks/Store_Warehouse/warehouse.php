@@ -28,8 +28,15 @@ class Warehouse
         $header = ['Name', 'Price', 'Category', 'Description', 'Expiry date', 'Amount'];
         fputcsv($txtFile, [...$header], '|');
         foreach ($this->stock as $product) {
-            fputcsv($txtFile, [$product->name, $product->price, $product->category, $product->description,
-                $product->expiryDate, $product->amount], '|');
+            fputcsv(
+                $txtFile,
+                [$product->name,
+                    $product->price,
+                    $product->category,
+                    $product->description,
+                    $product->expiryDate,
+                    $product->amount],
+                '|');
         }
     }
 

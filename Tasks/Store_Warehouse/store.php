@@ -40,6 +40,7 @@ class Store {
         if ($this->findByName($name)->amount >= $amount) {
             $this->findByName($name)->amount -= $amount;
             $this->buyer->money -= $this->findByName($name)->price * $amount;
+
             $this->buyer->updateFile();
             $this->saveChanges();
         } else {
@@ -73,8 +74,13 @@ class Store {
         $tempfile = fopen('tempfile.csv', 'w+');
         fputcsv($tempfile, [...$fields]);
         foreach ($this->stock as $product) {
-            fputcsv($tempfile, [$product->name, $product->price, $product->category, $product->description,
-                $product->expiryDate, $product->amount]);
+            fputcsv($tempfile,
+                [$product->name,
+                    $product->price,
+                    $product->category,
+                    $product->description,
+                    $product->expiryDate,
+                    $product->amount]);
         }
         rename('tempfile.csv', 'stock.csv');
     }
