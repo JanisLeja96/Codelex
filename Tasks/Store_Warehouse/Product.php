@@ -21,6 +21,12 @@ class Product {
 
     public function __toString()
     {
-        return sprintf(Product::$MASK, ...array_map(fn($var) => $this->$var, array_keys(get_object_vars($this))));
+        return sprintf(Product::$MASK,
+            $this->name,
+            $this->price,
+            $this->category,
+            $this->description,
+            $this->expiryDate,
+            $this->amount);
     }
 }
