@@ -13,7 +13,7 @@ class Warehouse
 
         while (!feof($this->databaseFile)) {
             $entry = fgetcsv($this->databaseFile, 0, ';');
-            if (gettype($entry) == 'array') {
+            if ($entry) {
                 if ($entry[0] == 'Name') {
                     continue;
                 }

@@ -14,7 +14,7 @@ class Store {
         $this->databaseFile = fopen('stock.csv', 'r+');
         while (!feof($this->databaseFile)) {
             $entry = fgetcsv($this->databaseFile);
-            if (gettype($entry) == 'array') {
+            if ($entry) {
                 if ($entry[0] == 'Name') {
                     continue;
                 }
@@ -53,7 +53,7 @@ class Store {
         $warehouseFile = fopen('warehouse.txt', 'r');
         while (!feof($warehouseFile)) {
             $entry = fgetcsv($warehouseFile, 0, '|');
-            if (gettype($entry) == 'array') {
+            if ($entry) {
                 if ($entry[0] == 'Name') {
                     continue;
                 }
