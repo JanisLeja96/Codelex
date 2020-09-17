@@ -29,9 +29,14 @@ class Odometer
     private int $maxMileage = 999999;
     private FuelGauge $fuelGauge;
 
-    public function __construct($fuelGauge)
+    public function __construct()
     {
-        $this->fuelGauge = $fuelGauge;
+        $this->fuelGauge = new FuelGauge();
+    }
+
+    public function getFuelGauge()
+    {
+        return $this->fuelGauge;
     }
 
     public function addKM()
@@ -54,14 +59,13 @@ class Odometer
     }
 }
 
-$fuelGauge = new FuelGauge();
-$odometer = new Odometer($fuelGauge);
+$odometer = new Odometer();
 
-while ($fuelGauge->getCurrentFuel() < 10) {
-    $fuelGauge->addFuel();
+while ($odometer->getFuelGauge()->getCurrentFuel() < 10) {
+    $odometer->getFuelGauge()->addFuel();
 }
 
-while ($fuelGauge->getCurrentFuel() > 0) {
+while ($odometer->getFuelGauge()->getCurrentFuel() > 0) {
     $odometer->addKM();
-    echo "Current amount of fuel is {$fuelGauge->getCurrentFuel()} liters. Mileage is {$odometer->getMileage()}\n";
+    echo "Current amount of fuel is {$odometer->getFuelGauge()->getCurrentFuel()} liters. Mileage is {$odometer->getMileage()}\n";
 }
