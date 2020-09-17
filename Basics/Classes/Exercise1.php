@@ -1,9 +1,9 @@
 <?php
 
 Class Product {
-    public string $name;
-    public float $price;
-    public int $amount;
+    private string $name;
+    private float $price;
+    private int $amount;
 
     public function __construct(string $name, float $price_at_start, int $amount_at_start) {
         $this->name = $name;
@@ -11,15 +11,15 @@ Class Product {
         $this->amount = $amount_at_start;
     }
 
-    function print_product() {
+    public function print_product() {
         return "{$this->name}, price {$this->price}, amount {$this->amount}";
     }
 
-    function setQTY(int $qty) {
+    public function setQTY(int $qty) {
         $this->amount = $qty;
     }
 
-    function setPrice(int $price) {
+    public function setPrice(int $price) {
         $this->price = $price;
     }
 }

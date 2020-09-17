@@ -3,15 +3,20 @@
 
 Class Movie
 {
-    public string $title;
-    public string $studio;
-    public string $rating;
+    private string $title;
+    private string $studio;
+    private string $rating;
 
     public function __construct($title, $studio, $rating)
     {
         $this->title = $title;
         $this->rating = $rating;
         $this->studio = $studio;
+    }
+
+    public function getTitle()
+    {
+        return $this->title;
     }
 
     public static function newPG($title, $studio)
@@ -34,5 +39,5 @@ $spiderman = new Movie('Spider-Man: Into the Spider-Verse', 'Columbia Pictures',
 $movies = [$casinoRoyale, $glass, $spiderman];
 
 foreach (Movie::getPG($movies) as $movie) {
-    echo $movie->title;
+    echo $movie->getTitle();
 }

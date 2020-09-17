@@ -2,8 +2,8 @@
 
 class Account
 {
-    public string $name;
-    public float $balance;
+    private string $name;
+    private float $balance;
 
     public function __construct($name, $balance)
     {

@@ -1,8 +1,8 @@
 <?php
 
 Class Point {
-    public $x;
-    public $y;
+    private $x;
+    private $y;
 
     public function __construct($x, $y) {
         $this->x = $x;
@@ -19,11 +19,21 @@ Class Point {
         $p2->x = $tempX;
         $p2->y = $tempY;
     }
+
+    public function getX()
+    {
+        return $this->x;
+    }
+
+    public function getY()
+    {
+        return $this->y;
+    }
 }
 
 $p1 = new Point(5, 2);
 $p2 = new Point(-3, 6);
 
 Point::swap_points($p1, $p2);
-echo "(" . $p1->x . ", " . $p1->y . ")";
-echo "(" . $p2->x . ", " . $p2->y . ")";
+echo "(" . $p1->getX() . ", " . $p1->getY() . ")";
+echo "(" . $p2->getX() . ", " . $p2->getY() . ")";
