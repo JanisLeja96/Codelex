@@ -2,8 +2,8 @@
 
 class BankAccount
 {
-    public string $name;
-    public float $balance;
+    private string $name;
+    private float $balance;
 
     public function __construct($name, $balance)
     {
@@ -11,7 +11,7 @@ class BankAccount
         $this->balance = $balance;
     }
 
-    function showUserNameAndBalance()
+    public function showUserNameAndBalance()
     {
         if ($this->balance < 0) {
             return $this->name . ', -$' . number_format(abs($this->balance), 2, '.', ',');
