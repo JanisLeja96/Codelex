@@ -49,8 +49,8 @@ class Application
 
     private function add_movies()
     {
-
-        $this->videoStore->addVideo(readline("Enter movie title: "));
+        $title = readline("Enter movie title: ");
+        $this->videoStore->addVideo(new Video($title));
     }
 
     private function rent_video()
@@ -79,9 +79,9 @@ class VideoStore
 {
     private array $videos = [];
 
-    public function addVideo(string $title)
+    public function addVideo(Video $video)
     {
-        $this->videos[] = new Video($title);
+        $this->videos[] = $video;
     }
 
     public function findByTitle(string $title)
