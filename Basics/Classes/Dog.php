@@ -1,15 +1,35 @@
 <?php
 
 Class Dog {
-    public string $name;
-    public string $sex;
-    public Dog $mother;
-    public Dog $father;
+    private string $name;
+    private string $sex;
+    private Dog $mother;
+    private Dog $father;
 
     public function __construct($name, $sex)
     {
         $this->name = $name;
         $this->sex = $sex;
+    }
+
+    public function setFather(Dog $father)
+    {
+        $this->father = $father;
+    }
+
+    public function setMother(Dog $mother)
+    {
+        $this->mother = $mother;
+    }
+
+    public function getMother()
+    {
+        return $this->mother;
+    }
+
+    public function getFather()
+    {
+        return $this->father;
     }
 
     public function fathersName()
@@ -35,17 +55,17 @@ $lady = new Dog('Lady', 'female');
 $molly = new Dog('Molly', 'female');
 $coco = new Dog('Coco', 'female');
 
-$max->mother = $lady;
-$max->father = $rocky;
+$max->setMother($lady);
+$max->setFather($rocky);
 
-$coco->mother = $molly;
-$coco->father = $buster;
+$coco->setMother($molly);
+$coco->setFather($buster);
 
-$rocky->mother = $molly;
-$rocky->father = $sam;
+$rocky->setMother($molly);
+$rocky->setFather($sam);
 
-$buster->mother = $lady;
-$buster->father = $sparky;
+$buster->setMother($lady);
+$buster->setFather($sparky);
 
 echo $coco->fathersName() . "\n";
 echo $sparky->fathersName(). "\n";
