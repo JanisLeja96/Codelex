@@ -2,7 +2,7 @@
 
 class Application
 {
-    public VideoStore $videoStore;
+    private VideoStore $videoStore;
 
     public function __construct()
     {
@@ -77,52 +77,48 @@ class Application
 
 class VideoStore
 {
-    public array $videos;
+    private array $videos;
 
     public function addVideo(string $title)
     {
         $this->videos[] = new Video($title);
     }
 
-    public function checkOut(string $title)
+    public function findByTitle(string $title)
     {
         foreach ($this->videos as $video) {
-            if ($title == $video->title) {
-                $video->checkOut();
-                break;
+            if ($title == $video->getTitle()) {
+                return $video;
             }
         }
+        return null;
+    }
+
+    public function checkOut(string $title)
+    {
+        $this->findByTitle($title)->checkOut();
     }
 
     public function return(string $title) {
-        foreach ($this->videos as $video) {
-            if ($title == $video->title) {
-                $video->return();
-                break;
-            }
-        }
+        $this->findByTitle($title)->return();
     }
 
     public function rate($title, $rating) {
-        foreach ($this->videos as $video) {
-            if ($title == $video->title) {
-                $video->rate($rating);
-                break;
-            }
-        }
+        $this->findByTitle($title)->rate($rating);
     }
 
     public function listInventory() {
         echo "\n\n";
         foreach($this->videos as $video) {
-            echo "Title: {$video->title} Rating: {$video->averageRating} ";
-            if (count($video->ratings) > 1) {
+            echo "Title: {$video->getTitle()} Rating: {$video->getAverageRating()} ";
+            if (count($video->getRatings()) > 1) {
                 echo (count(array_filter
-                    ($video->ratings, fn($rating) =>
-                        $rating >= 4)) / count($video->ratings)) * 100 . "% of people liked it";
+                    ($video->ratings,
+                            fn($rating) =>
+                            $rating >= 4)) / count($video->ratings)) * 100 . "% of people liked it";
             }
             echo " In store:";
-            echo $video->isCheckedOut ? ' No' : ' Yes';
+            echo $video->isCheckedOut() ? ' No' : ' Yes';
             echo "\n";
         }
         echo "\n\n";
@@ -133,14 +129,37 @@ class VideoStore
 
 class Video
 {
-    public string $title;
-    public bool $isCheckedOut = false;
-    public array $ratings;
-    public float $averageRating = 0;
+    private string $title;
+    private bool $isCheckedOut;
+    private array $ratings;
+    private float $averageRating;
 
     public function __construct($title)
     {
         $this->title = $title;
+        $this->isCheckedOut = false;
+        $this->averageRating = 0;
+        $this->ratings = [];
+    }
+
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    public function isCheckedOut()
+    {
+        return $this->isCheckedOut;
+    }
+
+    public function getRatings()
+    {
+        return $this->ratings;
+    }
+
+    public function getAverageRating()
+    {
+        return $this->averageRating;
     }
 
     public function checkOut()
