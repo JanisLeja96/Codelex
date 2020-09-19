@@ -77,7 +77,7 @@ class Application
 
 class VideoStore
 {
-    private array $videos;
+    private array $videos = [];
 
     public function addVideo(string $title)
     {
@@ -110,14 +110,14 @@ class VideoStore
     public function listInventory() {
         echo "\n\n";
         foreach($this->videos as $video) {
-            echo "Title: {$video->getTitle()} Rating: {$video->getAverageRating()} ";
+            echo "Title: {$video->getTitle()}, Rating: {$video->getAverageRating()} ";
             if (count($video->getRatings()) > 1) {
-                echo (count(array_filter
-                    ($video->ratings,
+                echo ', '.(count(array_filter
+                    ($video->getRatings(),
                             fn($rating) =>
-                            $rating >= 4)) / count($video->ratings)) * 100 . "% of people liked it";
+                            $rating >= 4)) / count($video->getRatings())) * 100 . "% of people liked it";
             }
-            echo " In store:";
+            echo ", In store:";
             echo $video->isCheckedOut() ? ' No' : ' Yes';
             echo "\n";
         }
