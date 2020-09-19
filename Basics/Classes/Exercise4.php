@@ -1,5 +1,4 @@
 <?php
-//TODO
 
 Class Movie
 {
@@ -21,8 +20,7 @@ Class Movie
 
     public static function newPG($title, $studio)
     {
-        $instance = new self($title, $studio, 'PG');
-        return $instance;
+        return new self($title, $studio, 'PG');
     }
 
     public static function getPG(array $movies)
